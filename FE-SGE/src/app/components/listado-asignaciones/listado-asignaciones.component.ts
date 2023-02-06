@@ -37,12 +37,12 @@ export class ListadoAsignacionesComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
 
   }
-
+  //Paginación
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
-  
+  //Filtro
   filtrar(event: Event) {
     const filtro = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filtro.trim().toLowerCase();

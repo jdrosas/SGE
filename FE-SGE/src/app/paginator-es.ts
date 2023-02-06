@@ -1,3 +1,4 @@
+// Paginación en Español
 import { Injectable } from "@angular/core";
 import { MatPaginatorIntl } from "@angular/material/paginator";
 
