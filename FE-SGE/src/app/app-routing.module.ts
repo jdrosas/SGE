@@ -8,10 +8,23 @@ import { ListadoAsignacionesComponent } from './components/listado-asignaciones/
 import { VerAsignacionesComponent } from './components/ver-asignaciones/ver-asignaciones.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'ListadoAsignaciones', pathMatch: 'full'},
-  { path: 'ListadoAsignaciones', component: ListadoAsignacionesComponent},
-  { path: 'AgregarAsignaciones', component: AgregarEditarAsignacionesComponent},
-  { path: 'VerAsignaciones', component: VerAsignacionesComponent}
+  // Rutas cuando se ingresa la url sola direcciona directamente al listado asignaciones
+  { path: '', redirectTo: 'ListadoAsignaciones', pathMatch: 'full' },
+
+  // Ruta del listado de asignaciones
+  { path: 'ListadoAsignaciones', component: ListadoAsignacionesComponent },
+
+  // Rutas de agregar asignaciones
+  { path: 'AgregarAsignaciones', component: AgregarEditarAsignacionesComponent },
+
+  // Rutas de ver asignaciones
+  { path: 'VerAsignaciones/:id', component: VerAsignacionesComponent },
+
+  // Rutas de editar asignaciones
+  { path: 'EditarAsignaciones/:id', component: AgregarEditarAsignacionesComponent },
+
+  // Rutas cuando se ingresa una ruta que no encuentra se dirige a la ruta de Listado Asignaciones
+  { path: '**', redirectTo: 'ListadoAsignaciones', pathMatch: 'full' }
 ];
 
 @NgModule({
