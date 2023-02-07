@@ -1,0 +1,9 @@
+.cuadro {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
