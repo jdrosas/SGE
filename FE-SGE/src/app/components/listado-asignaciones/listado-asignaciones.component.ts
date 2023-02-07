@@ -17,7 +17,8 @@ const list_asignaciones: SGE[] = [
   { nombre: 'Optiplex', tipo: 'Portatil', marca: 'Dell', modelo: '8400', observaciones: 'Nuevo'},
   { nombre: 'Optiplex', tipo: 'Portatil', marca: 'Dell', modelo: '8400', observaciones: 'Nuevo'},
   { nombre: 'Optiplex', tipo: 'Portatil', marca: 'Dell', modelo: '8400', observaciones: 'Nuevo'},
-  { nombre: 'Optiplex', tipo: 'Portatil', marca: 'Dell', modelo: '8400', observaciones: 'Nuevo'}
+  { nombre: 'Optiplex', tipo: 'Portatil', marca: 'Dell', modelo: '8400', observaciones: 'Nuevo'},
+  { nombre: 'ABCD', tipo: 'Portatil', marca: 'Dell', modelo: '8400', observaciones: 'Nuevo'}
 ];
 
 @Component({
@@ -37,7 +38,7 @@ export class ListadoAsignacionesComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
 
   }
-  //Paginación
+  //Paginación, Ordenamiento
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
