@@ -26,7 +26,19 @@ table {
     font-size: 14px;
     width: 100%;
   }
-  
-  td, th {
-    width: 25%;
+
+  .delete {
+    cursor: pointer;
+    color: #E15639
   }
+
+  .edit {
+    cursor: pointer;
+    color: #1878B0
+  }
+
+  .search {
+    cursor: pointer;
+    color: #196F3D;
+  }
+

@@ -19,6 +19,8 @@ import { MatPaginatorIntl, MatPaginatorModule } from '@angular/material/paginato
 import { MatInputModule } from '@angular/material/input';
 import { CustomMatPaginatorIntl } from './paginator-es';
 import { MatSortModule } from '@angular/material/sort';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { MatSortModule } from '@angular/material/sort';
     MatTableModule,
     MatPaginatorModule,
     MatInputModule,
-    MatSortModule
+    MatSortModule,
+    MatIconModule,
+    MatTooltipModule
   ],
   providers: [{
     provide: MatPaginatorIntl,

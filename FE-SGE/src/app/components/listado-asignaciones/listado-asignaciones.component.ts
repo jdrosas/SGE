@@ -27,7 +27,7 @@ const list_asignaciones: SGE[] = [
   styleUrls: ['./listado-asignaciones.component.css']
 })
 export class ListadoAsignacionesComponent implements OnInit, AfterViewInit {
-  displayedColumns: string[] = ['nombre', 'tipo', 'marca', 'modelo', 'observaciones'];
+  displayedColumns: string[] = ['nombre', 'tipo', 'marca', 'modelo', 'observaciones', 'acciones', ];
   dataSource = new MatTableDataSource<SGE>(list_asignaciones);
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
