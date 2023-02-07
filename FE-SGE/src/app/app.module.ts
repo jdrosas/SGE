@@ -4,24 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Modulos
+
+import { SharedModule } from './shared/shared.module';
+
 // Componentes
 
 import { AgregarEditarAsignacionesComponent } from './components/agregar-editar-asignaciones/agregar-editar-asignaciones.component';
 import { ListadoAsignacionesComponent } from './components/listado-asignaciones/listado-asignaciones.component';
 import { VerAsignacionesComponent } from './components/ver-asignaciones/ver-asignaciones.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-// Angular Material
-
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorIntl, MatPaginatorModule } from '@angular/material/paginator';
-import { MatInputModule } from '@angular/material/input';
 import { CustomMatPaginatorIntl } from './paginator-es';
-import { MatSortModule } from '@angular/material/sort';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatButtonModule } from '@angular/material/button';
+import { MatPaginatorIntl } from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -34,14 +28,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatInputModule,
-    MatSortModule,
-    MatIconModule,
-    MatTooltipModule,
-    MatButtonModule
+    SharedModule
   ],
   providers: [{
     provide: MatPaginatorIntl,
