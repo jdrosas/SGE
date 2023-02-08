@@ -14,6 +14,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 
 // Componentes
 import { ProcessComponent } from './process/process.component';
@@ -34,7 +37,10 @@ import { ProcessComponent } from './process/process.component';
     MatButtonModule,
     MatCardModule,
     MatSnackBarModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatGridListModule,
+    MatFormFieldModule,
+    MatSelectModule,
   ],
   exports: [
     MatSlideToggleModule,
@@ -48,7 +54,10 @@ import { ProcessComponent } from './process/process.component';
     MatCardModule,
     MatSnackBarModule,
     ProcessComponent,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatGridListModule,
+    MatFormFieldModule,
+    MatSelectModule,
   ]
 })
 export class SharedModule { }

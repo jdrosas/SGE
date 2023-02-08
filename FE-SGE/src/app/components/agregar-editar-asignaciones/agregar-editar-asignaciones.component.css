@@ -1,0 +1,23 @@
+.card {
+    margin: 15px;
+}
+
+/* CSS Subtitulo */
+.mat-mdc-card-subtitle {
+    margin: 15px;
+}
+
+.anchoContainer mat-form-field {
+    width: 95%;
+}
+
+.mat-mdc-select-trigger {
+    text-align: left;
+}
+
+/* CSS Boton Guardar */
+.btnGuardar {
+    margin-right: 15px;
+    text-align: left;
+}
+

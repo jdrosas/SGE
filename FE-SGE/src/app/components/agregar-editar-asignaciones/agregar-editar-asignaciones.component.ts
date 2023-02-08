@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./agregar-editar-asignaciones.component.css']
 })
 export class AgregarEditarAsignacionesComponent {
+  loading: boolean = false;
+  
+  constructor() { }
+
+
 
 }

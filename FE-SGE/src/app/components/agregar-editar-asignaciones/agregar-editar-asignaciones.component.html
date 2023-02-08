@@ -1,1 +1,78 @@
-<p>agregar-editar-asignaciones works!</p>
+<!-- Titulo -->
+<div class="title">
+    <h1>Agregar Asignación</h1>
+</div>
+
+<!-- Barra de proceso -->
+<app-process *ngIf="loading"></app-process>
+
+<!-- Contenedor Principal -->
+<div class="container" style="text-align: center;">
+    <mat-card class="anchoContainer">
+        <mat-card-subtitle>
+            Datos de la Asignación
+        </mat-card-subtitle>
+        <form>
+            <mat-grid-list cols="2" rowHeight="86px">
+
+                <!-- Input normal -->
+                <mat-grid-tile>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Nombre</mat-label>
+                        <input matInput autocomplete="off" required>
+                        <mat-hint>Escriba el nombre del equipo.</mat-hint>
+                      </mat-form-field>
+                </mat-grid-tile>
+                
+                <!-- Menu desplegable Tipo-->
+                <mat-grid-tile>
+                      <mat-form-field appearance="outline">
+                        <mat-label>Tipo</mat-label>
+                        <mat-select required>
+                            <mat-option value="opcion1">Portatil</mat-option>
+                            <mat-option value="opcion2">Escritorio</mat-option>
+                            <mat-option value="opcion3">Celular</mat-option>
+                        </mat-select>
+                        <mat-hint>Seleccione el tipo de dispositivo.</mat-hint>
+                      </mat-form-field>
+                </mat-grid-tile>
+                
+                <!-- Menu desplegable Marca-->
+
+                <mat-grid-tile>
+                    <mat-form-field appearance="outline">
+                      <mat-label>Marca</mat-label>
+                      <mat-select required>
+                          <mat-option value="opcion1">Dell</mat-option>
+                          <mat-option value="opcion2">Hp</mat-option>
+                          <mat-option value="opcion3">Samsung</mat-option>
+                      </mat-select>
+                      <mat-hint>Selecciona la marca del dispositivo.</mat-hint>
+                    </mat-form-field>
+                </mat-grid-tile>
+
+                <!-- Input normal -->
+                <mat-grid-tile>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Modelo</mat-label>
+                        <input matInput type="text" pattern="[0-9]*" required autocomplete="off">
+                        <mat-hint>Escriba el modelo del equipo. (Solo numeros)</mat-hint>
+                      </mat-form-field>
+                </mat-grid-tile>
+
+                <!-- Input normal -->
+                <mat-grid-tile [colspan]="2">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Observaciones</mat-label>
+                        <input matInput autocomplete="off">
+                        <mat-hint>Por favor escriba las observaciones pertinentes.</mat-hint>
+                      </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="2">
+                    <button class="btnGuardar" mat-raised-button color="warn">Guardar</button>
+                    <button routerLink="ListadoAsignaciones" mat-raised-button color="primary">Cancelar</button>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </form>
+    </mat-card>
+</div>
