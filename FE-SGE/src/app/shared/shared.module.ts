@@ -13,9 +13,15 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+
+// Componentes
+import { ProcessComponent } from './process/process.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ProcessComponent
+  ],
   imports: [
     CommonModule,
     MatSlideToggleModule,
@@ -27,7 +33,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatTooltipModule,
     MatButtonModule,
     MatCardModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatProgressBarModule
   ],
   exports: [
     MatSlideToggleModule,
@@ -39,7 +46,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatTooltipModule,
     MatButtonModule,
     MatCardModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ProcessComponent,
+    MatProgressBarModule
   ]
 })
 export class SharedModule { }

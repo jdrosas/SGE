@@ -32,6 +32,7 @@ export class ListadoAsignacionesComponent implements OnInit, AfterViewInit {
   dataSource = new MatTableDataSource<SGE>(list_asignaciones);
   horizontalPosition: MatSnackBarHorizontalPosition = 'right';
   verticalPosition: MatSnackBarVerticalPosition = 'bottom';
+  loading: boolean = false
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
@@ -54,11 +55,17 @@ export class ListadoAsignacionesComponent implements OnInit, AfterViewInit {
 
   // Eliminar Asignacion
   EliminarAsignacion() {
-    this._snackBar.open("Asignacion Eliminada", "", {
-      duration: 3500,
-      horizontalPosition: "right",
-      verticalPosition: "bottom",
-    });
+
+    this.loading = true;
+
+    setTimeout(() => {
+      this.loading = false;
+      this._snackBar.open("Eliminado!", "", {
+        duration: 3000,
+        horizontalPosition: "right",
+        verticalPosition: "bottom",
+      });
+    }, 1000);
   }
 
 }
