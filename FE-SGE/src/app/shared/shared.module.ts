@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+// Modulos
+
+import { ReactiveFormsModule } from '@angular/forms';
+
 // Angular Material
 
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -41,6 +45,7 @@ import { ProcessComponent } from './process/process.component';
     MatGridListModule,
     MatFormFieldModule,
     MatSelectModule,
+    ReactiveFormsModule,
   ],
   exports: [
     MatSlideToggleModule,
@@ -58,6 +63,7 @@ import { ProcessComponent } from './process/process.component';
     MatGridListModule,
     MatFormFieldModule,
     MatSelectModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }
