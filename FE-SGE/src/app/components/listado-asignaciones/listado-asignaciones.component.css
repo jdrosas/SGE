@@ -1,44 +1,44 @@
 table {
     width: 100%;
-  }
+}
   
-  .title {
-    padding: 12px;
-    background-color: #1B4F72;
-    text-align: center;
-    color: white;
-  }
+.title {
+  padding: 12px;
+  background-color: #1B4F72;
+  text-align: center;
+  color: white;
+}
 
-  td, th {
-    width: 15%;
-  }
+td, th {
+  width: 15%;
+}
 
-  .paginacion {
-    margin: 0 20%
-  }
+.paginacion {
+  margin: 0 20%
+}
 
-  /*Cuadro Filtro*/
-  .mat-mdc-form-field {
-    font-size: 14px;
-    width: 100%;
-  }
+/*Cuadro Filtro*/
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
 
-  .delete {
-    cursor: pointer;
-    color: #E15639
-  }
+.delete {
+  cursor: pointer;
+  color: #E15639
+}
 
-  .edit {
-    cursor: pointer;
-    color: #1878B0
-  }
+.edit {
+  cursor: pointer;
+  color: #1878B0
+}
 
-  .visibility {
-    cursor: pointer;
-    color: #196F3D;
-  }
+.visibility {
+  cursor: pointer;
+  color: #196F3D;
+}
 
-  .aceptar {
-    font-size: 13px;
-    line-height: 28px;
-  }
+.aceptar {
+  font-size: 13px;
+  line-height: 28px;
+}

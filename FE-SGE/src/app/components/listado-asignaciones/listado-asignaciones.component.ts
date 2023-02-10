@@ -28,11 +28,11 @@ const list_asignaciones: SGE[] = [
   styleUrls: ['./listado-asignaciones.component.css']
 })
 export class ListadoAsignacionesComponent implements OnInit, AfterViewInit {
-  displayedColumns: string[] = ['nombre', 'tipo', 'marca', 'modelo', 'observaciones', 'acciones', ];
+  displayedColumns: string[] = ['nombre', 'tipo', 'marca', 'modelo', 'observaciones', 'acciones', ]; // Se definen columnas para el .HTML
   dataSource = new MatTableDataSource<SGE>(list_asignaciones);
   horizontalPosition: MatSnackBarHorizontalPosition = 'right';
   verticalPosition: MatSnackBarVerticalPosition = 'bottom';
-  loading: boolean = false
+  loading: boolean = false // Definir variable de carga
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
@@ -47,7 +47,7 @@ export class ListadoAsignacionesComponent implements OnInit, AfterViewInit {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
   }
-  // Filtro
+  // Evento que realiza el Filtro
   filtrar(event: Event) {
     const filtro = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filtro.trim().toLowerCase();
@@ -56,16 +56,16 @@ export class ListadoAsignacionesComponent implements OnInit, AfterViewInit {
   // Eliminar Asignacion
   EliminarAsignacion() {
 
-    this.loading = true;
+    this.loading = true; // Se cambia variable "Loading" a true
 
     setTimeout(() => {
       this.loading = false;
       this._snackBar.open("Eliminado!", "", {
-        duration: 3000,
+        duration: 3000, // Duracion de mensaje - Eliminado
         horizontalPosition: "right",
         verticalPosition: "bottom",
       });
-    }, 1000);
+    }, 1000); // Duracion de barra carga
   }
 
 }
