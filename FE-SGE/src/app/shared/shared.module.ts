@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 
 // Modulos
 
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 // Angular Material
 
@@ -21,6 +22,9 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 // Componentes
 import { ProcessComponent } from './process/process.component';
@@ -46,6 +50,10 @@ import { ProcessComponent } from './process/process.component';
     MatFormFieldModule,
     MatSelectModule,
     ReactiveFormsModule,
+    FormsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   exports: [
     MatSlideToggleModule,
@@ -63,7 +71,11 @@ import { ProcessComponent } from './process/process.component';
     MatGridListModule,
     MatFormFieldModule,
     MatSelectModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ]
 })
 export class SharedModule { }

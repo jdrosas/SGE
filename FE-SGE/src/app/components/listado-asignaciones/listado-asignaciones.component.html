@@ -2,10 +2,25 @@
 <app-process *ngIf="loading"></app-process>
 
 <!-- Titulo -->
-<div class="title">
-    <h1>Asignación de equipos</h1>
-</div>
 
+<!-- <div class="title">
+    <h1>Asignación de equipos</h1>
+</div> -->
+
+<!-- <p>
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Mesa de Ayuda - Agora TIC</span>
+      <span class="espaciados_barra"></span>
+      <button mat-icon-button class="icono-cuenta">
+        <mat-icon fontIcon="account_circle">Account Circle</mat-icon>
+      </button>
+      <mat-slide-toggle></mat-slide-toggle>
+    </mat-toolbar>
+  </p> -->
+  
 <!-- Contenedor Principal -->
 <div class="container">
 
@@ -50,7 +65,7 @@
         </ng-container>
 
         <!-- Columna Acciones -->
-        <ng-container matColumnDef="acciones">
+        <ng-container matColumnDef="acciones" class="columna_acciones">
             <th mat-header-cell *matHeaderCellDef> <!-- Definicion de botones Agregar -->
                 <button routerLink="/AgregarAsignaciones" class="aceptar" mat-raised-button color="primary">Agregar</button>
             </th> 

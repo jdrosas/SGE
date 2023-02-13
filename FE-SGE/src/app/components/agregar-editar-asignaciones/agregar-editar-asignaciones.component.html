@@ -1,7 +1,22 @@
 <!-- Titulo -->
-<div class="title">
+
+<!-- <div class="title">
     <h1>Agregar Asignación</h1>
-</div>
+</div> -->
+
+<p>
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Mesa de Ayuda - Agora TIC</span>
+      <span class="espaciados_barra"></span>
+      <button mat-icon-button class="icono-cuenta">
+        <mat-icon fontIcon="account_circle">Account Circle</mat-icon>
+      </button>
+      <mat-slide-toggle></mat-slide-toggle>
+    </mat-toolbar>
+  </p>
 
 <!-- Barra de proceso -->
 <app-process *ngIf="loading"></app-process>

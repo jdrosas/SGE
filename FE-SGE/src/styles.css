@@ -13,3 +13,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .container {
   margin: 1% 15%
 }
+
+/* .espaciados_barra {
+  flex: 1 1 auto;
+} */
