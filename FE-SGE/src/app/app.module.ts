@@ -16,13 +16,15 @@ import { VerAsignacionesComponent } from './components/ver-asignaciones/ver-asig
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomMatPaginatorIntl } from './paginator-es';
 import { MatPaginatorIntl } from '@angular/material/paginator';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AgregarEditarAsignacionesComponent,
     ListadoAsignacionesComponent,
-    VerAsignacionesComponent
+    VerAsignacionesComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
