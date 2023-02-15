@@ -9,7 +9,7 @@ import { ChangeDetectorRef, Component } from '@angular/core';
 export class NavbarComponent {
   mobileQuery: MediaQueryList;
 
-  fillerNav = Array.from({ length: 3 }, (_, i) => `Nav Item ${i + 1}`);
+  fillerNav = Array.from({ length: 6 }, (_, i) => `Nav Item ${i + 1}`);
 
   //fillerContent = Array.from({ length: 50 }, () => `Lorem ipsum`);
 

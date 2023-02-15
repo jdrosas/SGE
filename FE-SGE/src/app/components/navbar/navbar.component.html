@@ -1,10 +1,26 @@
-<div class="example-container" [class.example-is-mobile]="mobileQuery.matches" *ngIf="shouldRun">
-    <mat-toolbar color="primary" class="example-toolbar">
+<div [class.example-is-mobile]="mobileQuery.matches" *ngIf="shouldRun">
+    <mat-toolbar color="primary" >
+      <img src="./assets/icono-agora2.png" alt="icono-agora2" class="icono-agora">
       <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
       <span>Mesa de Ayuda - Agora TIC</span>
-      <button mat-icon-button class="icono-cuenta">
-        <mat-icon fontIcon="account_circle">Account Circle</mat-icon>
+
+      <!-- <button mat-icon-button class="icono-cuenta">
+        <mat-icon fontIcon="account_circle"></mat-icon>
+      </button> -->
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="icono-cuenta">
+        <mat-icon>account_circle</mat-icon>
       </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>pin</mat-icon>
+          <span>Cambiar contraseña</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>logout</mat-icon>
+          <span>Cerrar Sesion</span>
+        </button>
+      </mat-menu>
+
       <mat-slide-toggle></mat-slide-toggle>
     </mat-toolbar>
   
