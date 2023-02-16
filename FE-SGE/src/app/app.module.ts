@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomMatPaginatorIntl } from './paginator-es';
 import { MatPaginatorIntl } from '@angular/material/paginator';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { InicioSesionComponent } from './components/inicio-sesion/inicio-sesion.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AgregarEditarAsignacionesComponent,
     ListadoAsignacionesComponent,
     VerAsignacionesComponent,
-    NavbarComponent
+    NavbarComponent,
+    InicioSesionComponent,
   ],
   imports: [
     BrowserModule,
